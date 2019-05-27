@@ -33,6 +33,10 @@ def shoe_size(player_name)
   game_hash[:home][:players].include?(player_name) ? game_hash[:home][:players][player_name][:shoe] : game_hash[:away][:players][player_name][:shoe]
 end
 
+def team_colors(team_name)
+  game_hash[:home][:team_name] == team_name ? game_hash[:home][:colors] : game_hash[:away][:colors]
+end
+
 
 
 
