@@ -63,8 +63,16 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-
-
+  largest_shoe = nil
+  largest_shoe_rebounds = nil 
+  final_hash.each do |name, stats|
+    if largest_shoe == nil || final_hash[name][:shoe] > largest_shoe
+      largest_shoe = final_hash[name][:shoe]
+      largest_shoe_rebounds = final_hash[name][:rebounds]
+    end
+  end
+largest_shoe_rebounds
+end
 
 
 
