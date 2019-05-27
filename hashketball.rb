@@ -63,6 +63,11 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  hash1 = game_hash[:away][:players]
+  hash2 = game_hash[:home][:players]
+
+  final_hash = hash1.merge(hash2) 
+  
   largest_shoe = nil
   largest_shoe_rebounds = nil 
   final_hash.each do |name, stats|
