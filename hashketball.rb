@@ -42,8 +42,7 @@ end
 def team_names
   team_array = []
   game_hash[:home][:team_name]
-  binding.pry
-end
+  
   
 
 
