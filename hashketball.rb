@@ -37,6 +37,9 @@ def team_colors(team_name)
   game_hash[:home][:team_name] == team_name ? game_hash[:home][:colors] : game_hash[:away][:colors]
 end
 
+def team_names
+  
+
 
 
 
