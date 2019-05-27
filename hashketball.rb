@@ -45,10 +45,16 @@ def team_names
 end
   
 def player_numbers(team_name)
+
   if game_hash[:home][:team_name] == team_name
-    game_hash[:home][:players].each |name, stats|
-      stats.each |stat, number|
+    game_hash[:home][:players].collect |name, stats|
+      [name][:number]
     end
+  else
+    game_hash[:away][:players].collect |name, stats|
+      [name][:number]
+    end
+  end
   
   end
 
