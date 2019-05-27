@@ -54,11 +54,10 @@ def player_numbers(team_name)
   else
     game_hash[:away][:players].collect do |name, stats|
       game_hash[:away][:players][name][:number]
-end 
     end
   end
+end
   
-  end
 
 
 
